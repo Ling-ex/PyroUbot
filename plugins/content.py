@@ -71,7 +71,7 @@ async def download_copy(get, c, infomsg, m, chatid, msgid):
 
 @Client.on_message(filters.command("copy", config.prefix) & filters.me)
 async def copy_content(c: Client, m: types.Message):
-    link = m.reply_to_message or get_msg(m)
+    link = get_msg(m)
     if not link:
         return await m.reply(
             f"<b><code>{m.text}</code> [link konten]</b>"
