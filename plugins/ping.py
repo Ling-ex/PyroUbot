@@ -10,4 +10,4 @@ async def ping(c: Client, m: types.Message):
     msg = await m.reply("ping...")
     end = datetime.now()
     return await msg.edit(
-        f"<b>Ping!</b>\n<code>{round((end - start).microseconds / 1000)}ms</code>")
+        f"<b>Pong!</b>\n<code>{round((end - start).microseconds / 1000)}ms</code>")

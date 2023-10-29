@@ -73,9 +73,7 @@ async def download_copy(get, c, infomsg, m, chatid, msgid):
 async def copy_content(c: Client, m: types.Message):
     link = get_msg(m)
     if not link:
-        return await m.reply(
-            f"<b><code>{m.text}</code> [link konten]</b>"
-        )
+        return await m.delete()
     infomsg = await m.reply("Processing....")
     if m.reply_to_message:
         try:
