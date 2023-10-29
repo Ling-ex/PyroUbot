@@ -7,7 +7,7 @@ async def main():
         level=logging.WARNING,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     )
-    logger = logging.getLogger("SolidUbot")
+    logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     logger.info("initializing userbots...")
     await bot.client.start()

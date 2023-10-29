@@ -10,9 +10,12 @@ $ sudo su
 apt update && apt upgrade -y
 git clone https://github.com/Ling-ex/SolidUbot
 pip3 install -U -r req*
-nano init.py # isi yang ada di file nya api_id dan api_hash
+screen -S SolidUbot
 python3 -m main
+
 setelah itu masukan no hp anda - code otp - password (jika ada) ini untuk pengambilan string saja
+
+Untuk keluar dari screen -> CTRL + A DAN CTRL + D
 ```
 
 # Credits
