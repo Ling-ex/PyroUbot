@@ -7,6 +7,8 @@ async def main():
         level=logging.WARNING,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     )
+    logging.getLogger("asyncio").setLevel(logging.CRITICAL)
+    logging.getLogger("pyrogram.session.session").setLevel(logging.CRITICAL)
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     logger.info("initializing userbots...")
