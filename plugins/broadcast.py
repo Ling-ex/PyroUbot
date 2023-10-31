@@ -40,7 +40,7 @@ async def broadcast(c: Client, m: types.Message):
                 done += 1
                 await asyncio.sleep(0.5)
             except errors.FloodWait as f:
-                await asyncio.sleep(f.x)
+                await asyncio.sleep(f.value)
             except Exception:
                 error += 1
     await load.edit(f"<i>Broadcast was sent to {done} groups, failed to send to {error} groups</i>")
