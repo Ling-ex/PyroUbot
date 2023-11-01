@@ -1,2 +1,8 @@
-*nv*
-*sess*
+__pycache__/
+*/__pycache__
+*.session*
+venv/
+env/
+.env
+.venv
+

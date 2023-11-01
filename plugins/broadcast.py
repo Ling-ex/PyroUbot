@@ -79,6 +79,7 @@ async def broadcast_forward(c: Client, m: types.Message):
             try:
                 await c.send_message(chat_id, reply)
                 done += 1
+                await asyncio.sleep(0.5)
             except errors.FloodWait as f:
                 await asyncio.sleep(f.value)
             except Exception:
