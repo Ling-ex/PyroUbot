@@ -8,9 +8,9 @@ Userbot ini menggunakan Library <a href="https://github.com/pyrogram/pyrogram">P
 ```bash
 $ sudo su
 apt update && apt upgrade -y
-git clone https://github.com/Ling-ex/SolidUbot
+git clone https://github.com/Ling-ex/PyroUbot
 pip3 install -U -r req*
-screen -S SolidUbot
+screen -S PyroUbot
 python3 -m main
 
 setelah itu masukan no hp anda - code otp - password (jika ada) ini untuk pengambilan string saja
