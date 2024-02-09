@@ -1,0 +1,5 @@
+hydrogram
+tgcrypto
+uvloop
+
+python-dotenv
